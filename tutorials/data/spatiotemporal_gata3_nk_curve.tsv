@@ -1,0 +1,5 @@
+guide	response	response_kind	target_cell_type	ring_midpoint	effect	sample_min	sample_max
+sgGata3	fraction_NK	composition	NK	60.0	0.004353380518255	0.0014073981815917	0.0072993628549184
+sgGata3	fraction_NK	composition	NK	100.0	-0.0001240991104342	-0.0033648899968344	0.0031166917759659
+sgGata3	fraction_NK	composition	NK	140.0	-0.0018072672785319	-0.0024733524918738	-0.00114118206519
+sgGata3	fraction_NK	composition	NK	200.0	-0.002137616083548	-0.0022143454417593	-0.0020608867253368

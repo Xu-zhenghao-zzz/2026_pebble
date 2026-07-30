@@ -66,11 +66,12 @@ print(result.radius_decision)
 ax = pr.plot_distance_response(result)
 ```
 
-The complete self-contained example is
-[`tutorials/quickstart.ipynb`](tutorials/quickstart.ipynb). It generates a
-synthetic spatial screen and runs in a few seconds on CPU. The committed
-notebook is pre-executed, with its QC maps, distance-response fit, radius
-summary and ring-width sensitivity outputs embedded in the cells.
+The synthetic API example is
+[`tutorials/quickstart.ipynb`](tutorials/quickstart.ipynb). Three additional
+pre-executed real-data case studies cover subQ Rab8a, lung Ccn1 and
+spatiotemporal Gata3. See the [`tutorials` index](tutorials/README.md). All
+notebooks embed their QC maps, result tables and interpretation directly in
+the cells.
 
 ## Public API
 

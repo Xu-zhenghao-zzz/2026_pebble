@@ -1,0 +1,10 @@
+cohort	section	response	estimand	effect	clones
+subQ	subQ-2	Hypoxia program	programme mean within inferred-malignant bins	0.06649698175997869	5
+subQ	subQ-2	IFN-response program	programme mean within inferred-malignant bins	-0.04597908259972483	5
+subQ	subQ-2	Malignant-like fraction	malignant-bin fraction	0.0491126224644999	5
+subQ	subQ-4	Hypoxia program	programme mean within inferred-malignant bins	0.218016405217686	1
+subQ	subQ-4	IFN-response program	programme mean within inferred-malignant bins	-0.1633664819903054	1
+subQ	subQ-4	Malignant-like fraction	malignant-bin fraction	0.16571406780233577	1
+subQ	subQ-5	Hypoxia program	programme mean within inferred-malignant bins	0.1546687536907369	2
+subQ	subQ-5	IFN-response program	programme mean within inferred-malignant bins	-0.12509927865355297	2
+subQ	subQ-5	Malignant-like fraction	malignant-bin fraction	0.14407091612746847	2

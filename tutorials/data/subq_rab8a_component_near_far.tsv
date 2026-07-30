@@ -1,0 +1,25 @@
+cohort	section	clone_id	response	near	far	effect	estimand
+subQ	subQ-2	clone_000119	Malignant-like fraction	0.3172335600907029	0.23329682365826945	0.08393673643243346	malignant-bin fraction
+subQ	subQ-2	clone_000120	Malignant-like fraction	0.20246621105264306	0.3453815261044177	-0.14291531505177463	malignant-bin fraction
+subQ	subQ-2	clone_000122	Malignant-like fraction	0.3039906103286385	0.30166880616174585	0.0023218041668926492	malignant-bin fraction
+subQ	subQ-2	clone_000124	Malignant-like fraction	0.31363636363636366	0.18780788177339902	0.12582848186296464	malignant-bin fraction
+subQ	subQ-2	clone_000126	Malignant-like fraction	0.35269841269841273	0.17630700778642935	0.17639140491198338	malignant-bin fraction
+subQ	subQ-4	clone_000153	Malignant-like fraction	0.3418628643012417	0.1761487964989059	0.16571406780233577	malignant-bin fraction
+subQ	subQ-5	clone_000170	Malignant-like fraction	0.3372774641771602	0.23285899094437257	0.10441847323278763	malignant-bin fraction
+subQ	subQ-5	clone_000172	Malignant-like fraction	0.3531412565026011	0.16941789748045177	0.1837233590221493	malignant-bin fraction
+subQ	subQ-2	clone_000119	Hypoxia program	0.7154544818286721	0.5424744948453516	0.1729799869833205	programme mean within inferred-malignant bins
+subQ	subQ-2	clone_000120	Hypoxia program	0.6209836977677365	0.6104140276041233	0.01056967016361321	programme mean within inferred-malignant bins
+subQ	subQ-2	clone_000122	Hypoxia program	0.6801686451664815	0.644803847214727	0.0353647979517544	programme mean within inferred-malignant bins
+subQ	subQ-2	clone_000124	Hypoxia program	0.5752837712256889	0.49089450263396406	0.0843892685917248	programme mean within inferred-malignant bins
+subQ	subQ-2	clone_000126	Hypoxia program	0.4760132002896158	0.44683201518013527	0.029181185109480534	programme mean within inferred-malignant bins
+subQ	subQ-4	clone_000153	Hypoxia program	0.6009509262362038	0.3829345210185178	0.218016405217686	programme mean within inferred-malignant bins
+subQ	subQ-5	clone_000170	Hypoxia program	0.5296420491437431	0.4015493404692287	0.12809270867451444	programme mean within inferred-malignant bins
+subQ	subQ-5	clone_000172	Hypoxia program	0.5224081214178646	0.34116332271090527	0.18124479870695936	programme mean within inferred-malignant bins
+subQ	subQ-2	clone_000119	IFN-response program	0.12830589938356346	0.20795619324920414	-0.07965029386564068	programme mean within inferred-malignant bins
+subQ	subQ-2	clone_000120	IFN-response program	0.1598082400455645	0.16728600598200707	-0.0074777659364425875	programme mean within inferred-malignant bins
+subQ	subQ-2	clone_000122	IFN-response program	0.1682362637212184	0.1516555370237741	0.016580726697444287	programme mean within inferred-malignant bins
+subQ	subQ-2	clone_000124	IFN-response program	0.10912710392381234	0.18876086181204366	-0.07963375788823132	programme mean within inferred-malignant bins
+subQ	subQ-2	clone_000126	IFN-response program	0.11778225813582964	0.1974965801415835	-0.07971432200575386	programme mean within inferred-malignant bins
+subQ	subQ-4	clone_000153	IFN-response program	0.12447041878627502	0.2878369007765804	-0.1633664819903054	programme mean within inferred-malignant bins
+subQ	subQ-5	clone_000170	IFN-response program	0.0409064067827843	0.19361115675499707	-0.15270474997221278	programme mean within inferred-malignant bins
+subQ	subQ-5	clone_000172	IFN-response program	0.10364428508461512	0.2011380924195083	-0.09749380733489318	programme mean within inferred-malignant bins

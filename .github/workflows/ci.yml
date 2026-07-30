@@ -24,15 +24,15 @@ jobs:
           import nbformat
           from nbclient import NotebookClient
 
-          path = Path("tutorials/quickstart.ipynb")
-          notebook = nbformat.read(path, as_version=4)
-          NotebookClient(
-              notebook,
-              timeout=180,
-              kernel_name="python3",
-              resources={"metadata": {"path": str(path.parent)}},
-          ).execute()
+          for path in sorted(Path("tutorials").glob("*.ipynb")):
+              notebook = nbformat.read(path, as_version=4)
+              NotebookClient(
+                  notebook,
+                  timeout=240,
+                  kernel_name="python3",
+                  resources={"metadata": {"path": str(path.parent)}},
+              ).execute()
+              print(f"executed {path}")
           PY
       - name: Build package
         run: python -m build
-
