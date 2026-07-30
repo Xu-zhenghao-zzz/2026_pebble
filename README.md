@@ -68,7 +68,9 @@ ax = pr.plot_distance_response(result)
 
 The complete self-contained example is
 [`tutorials/quickstart.ipynb`](tutorials/quickstart.ipynb). It generates a
-synthetic spatial screen and runs in a few seconds on CPU.
+synthetic spatial screen and runs in a few seconds on CPU. The committed
+notebook is pre-executed, with its QC maps, distance-response fit, radius
+summary and ring-width sensitivity outputs embedded in the cells.
 
 ## Public API
 
