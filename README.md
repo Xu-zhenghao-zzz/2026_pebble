@@ -20,6 +20,12 @@ python -m pip install -e .
 
 Python 3.10 or newer is required.
 
+To execute the raw-data tutorials, install the small H5 input extra:
+
+```bash
+python -m pip install -e ".[real]"
+```
+
 ## Input table
 
 The public API accepts a `pandas.DataFrame` with one row per spatial bin or
@@ -68,10 +74,11 @@ ax = pr.plot_distance_response(result)
 
 The synthetic API example is
 [`tutorials/quickstart.ipynb`](tutorials/quickstart.ipynb). Three additional
-pre-executed real-data case studies cover subQ Rab8a, lung Ccn1 and
-spatiotemporal Gata3. See the [`tutorials` index](tutorials/README.md). All
-notebooks embed their QC maps, result tables and interpretation directly in
-the cells.
+pre-executed case studies start from the downloaded raw H5/CSV/JSON inputs and
+cover subQ Rab8a, lung Ccn1 and spatiotemporal Gata3. They do not depend on
+frozen PerturbRadius result tables. See the [`tutorials` index](tutorials/README.md).
+All notebooks embed their raw-file audits, spatial maps, result tables and
+interpretation directly in the cells.
 
 ## Public API
 
@@ -83,10 +90,18 @@ the cells.
 - `assess_radius_support`
 - `analyze_radius`
 - `plot_distance_response`
+- `read_h5_axes`, `read_sparse_guide_calls`, `read_dense_guide_calls`
+- `stream_module_scores`, `marker_lineage`
+- `plot_section_map`, `plot_local_response`
 
 The high-level `analyze_radius` workflow excludes all source rows from the
 target pool and excludes multi-source target rows from the default effect
 estimate.
+
+Raw inputs are treated as read-only. Set `PERTURBRADIUS_DATA_ROOT` to the
+directory containing `SPAC/`, `SPAC_anno/` and
+`perturb_radius_spatiotemporal/`; the server default used in the executed
+tutorials is `/home/dataset-local/hulei/SpDiff/data`.
 
 ## Interpretation
 

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "perturbradius"
-version = "0.1.0"
+version = "0.2.0"
 description = "Minimal clone-centric spatial perturbation-scale analysis"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -29,8 +29,12 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
+real = [
+  "h5py>=3.8",
+]
 dev = [
   "build>=1.0",
+  "h5py>=3.8",
   "ipykernel>=6",
   "nbclient>=0.8",
   "nbformat>=5.9",
@@ -50,4 +54,3 @@ include = ["perturbradius*"]
 [tool.pytest.ini_options]
 addopts = "-q"
 testpaths = ["tests"]
-
