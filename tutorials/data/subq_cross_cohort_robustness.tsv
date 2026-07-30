@@ -1,0 +1,20 @@
+target_gene	target_cell_type	response	common_direction	lung_clones	lung_direction_consistency	subq_clones	subq_direction_consistency	concordant_clones_total	clones_total	exploratory_sign_p	exploratory_sign_fdr
+Bcam	CD8-like T	cell_type_fraction	increase	1	1.0	3	0.3333333333333333	2	4	0.6875	0.6875
+Bcam	CD8-like T	cytotoxicity	decrease	1	1.0	3	0.6666666666666666	3	4	0.3125	0.3298611111111111
+Bcam	Macrophage	cell_type_fraction	decrease	2	0.5	3	1.0	4	5	0.1875	0.301513671875
+Bcam	Macrophage	spp1_trem2_macrophage	decrease	2	1.0	3	1.0	5	5	0.03125	0.11875
+Bcam	Malignant-like	cell_type_fraction	increase	2	1.0	3	1.0	5	5	0.03125	0.11875
+Ehf	CD8-like T	cell_type_fraction	decrease	1	1.0	1	1.0	2	2	0.25	0.301513671875
+Ehf	Fibroblast-like	tgfb_ecm	increase	1	1.0	1	1.0	2	2	0.25	0.301513671875
+Ehf	Macrophage	cell_type_fraction	decrease	1	1.0	1	1.0	2	2	0.25	0.301513671875
+Ehf	Macrophage	spp1_trem2_macrophage	increase	1	1.0	1	1.0	2	2	0.25	0.301513671875
+Ehf	Malignant-like	cell_type_fraction	increase	1	1.0	1	1.0	2	2	0.25	0.301513671875
+Ehf	Malignant-like	hypoxia	increase	1	1.0	1	1.0	2	2	0.25	0.301513671875
+Ehf	Malignant-like	ifn_response	decrease	1	1.0	1	1.0	2	2	0.25	0.301513671875
+Rab8a	CD8-like T	cell_type_fraction	decrease	1	1.0	8	0.625	6	9	0.25390625	0.301513671875
+Rab8a	CD8-like T	cytotoxicity	decrease	1	1.0	8	0.75	7	9	0.08984375	0.2845052083333333
+Rab8a	Fibroblast-like	cell_type_fraction	increase	3	1.0	8	0.5	7	11	0.2744140625	0.3066980698529412
+Rab8a	Fibroblast-like	tgfb_ecm	increase	3	1.0	8	0.625	8	11	0.11328125	0.301513671875
+Rab8a	Malignant-like	cell_type_fraction	increase	3	1.0	8	0.875	10	11	0.005859375	0.037109375
+Rab8a	Malignant-like	hypoxia	increase	3	1.0	8	0.875	10	11	0.005859375	0.037109375
+Rab8a	Malignant-like	ifn_response	decrease	3	1.0	8	0.875	10	11	0.005859375	0.037109375
