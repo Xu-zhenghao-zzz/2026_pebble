@@ -17,14 +17,14 @@ jobs:
         run: python -m pip install -e ".[dev]"
       - name: Unit tests
         run: python -m pytest
-      - name: Execute tutorial
+      - name: Execute portable synthetic tutorial
         run: |
           python - <<'PY'
           from pathlib import Path
           import nbformat
           from nbclient import NotebookClient
 
-          for path in sorted(Path("tutorials").glob("*.ipynb")):
+          for path in [Path("tutorials/quickstart.ipynb")]:
               notebook = nbformat.read(path, as_version=4)
               NotebookClient(
                   notebook,
@@ -33,6 +33,20 @@ jobs:
                   resources={"metadata": {"path": str(path.parent)}},
               ).execute()
               print(f"executed {path}")
+          PY
+      - name: Validate embedded raw-data tutorials
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import nbformat
+
+          for path in sorted(Path("tutorials").glob("0*_real_*.ipynb")):
+              notebook = nbformat.read(path, as_version=4)
+              source = "\n".join(cell.source for cell in notebook.cells)
+              assert "PERTURBRADIUS_DATA_ROOT" in source
+              assert ".h5" in source
+              assert any(cell.get("outputs") for cell in notebook.cells if cell.cell_type == "code")
+              print(f"validated embedded outputs in {path}")
           PY
       - name: Build package
         run: python -m build
