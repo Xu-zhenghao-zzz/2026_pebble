@@ -20,7 +20,7 @@ from torch_geometric.loader import NeighborLoader
 import sys
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 from perturbgnn_v2_1.egat import (
-    EGATEncoder, EGATEncoderV2, assemble_node_features)
+    EGATEncoder, EGATEncoderV2, EGATEncoderV3, assemble_node_features)
 
 
 PROCESSED = Path("/mnt/data/xuzh/spac_seq/perturbgnn_v2/processed")
@@ -106,7 +106,7 @@ def main():
     ap.add_argument("--checkpoint", required=True)
     ap.add_argument("--slices", default="M001,M002,M003")
     ap.add_argument("--suffix", default="egat")
-    ap.add_argument("--encoder", default="v1", choices=["v1", "v2"],
+    ap.add_argument("--encoder", default="v1", choices=["v1", "v2", "v3"],
                     help="v1=EGATEncoder, v2=EGATEncoderV2 (anti-collapse)")
     ap.add_argument("--batch", type=int, default=8192)
     args = ap.parse_args()
@@ -118,18 +118,29 @@ def main():
     ckpt_args = ckpt["args"]
     print(f"  trained at epoch {ckpt['epoch']}, val_metrics: {list(ckpt.get('val_metrics', {}).keys())}", flush=True)
 
-    EncoderClass = EGATEncoder if args.encoder == "v1" else EGATEncoderV2
-    model = EncoderClass(
-        in_dim=ckpt_args["in_dim"] if "in_dim" in ckpt_args else 43,
+    EncoderClass = {"v1": EGATEncoder, "v2": EGATEncoderV2, "v3": EGATEncoderV3}[args.encoder]
+    common_kwargs = dict(
+        in_dim=ckpt_args.get("in_dim", 43),
         hidden_dim=ckpt_args["hidden"],
         embed_dim=ckpt_args["embed_dim"],
         edge_dim=8,
         heads=ckpt_args["heads"],
-        n_cell_types=8,
-        n_niches=12,
         dropout=ckpt_args.get("dropout", 0.1),
         attn_dropout=ckpt_args.get("attn_dropout", 0.0),
-    ).to(device)
+    )
+    if args.encoder == "v3":
+        model = EncoderClass(
+            n_niches=12,
+            contrastive_weight=ckpt_args.get("contrastive_weight", 0.5),
+            temperature=ckpt_args.get("temperature", 0.3),
+            **common_kwargs,
+        ).to(device)
+    else:
+        model = EncoderClass(
+            n_cell_types=8,
+            n_niches=12,
+            **common_kwargs,
+        ).to(device)
     model.load_state_dict(ckpt["model_state_dict"])
     model.eval()
 
