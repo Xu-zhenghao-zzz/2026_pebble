@@ -20,7 +20,7 @@ from torch_geometric.loader import NeighborLoader
 import sys
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 from perturbgnn_v2_1.egat import (
-    EGATEncoder, EGATEncoderV2, EGATEncoderV3, assemble_node_features)
+    EGATEncoder, EGATEncoderV2, EGATEncoderV3, EGATEncoderV4, assemble_node_features)
 
 
 PROCESSED = Path("/mnt/data/xuzh/spac_seq/perturbgnn_v2/processed")
@@ -106,7 +106,7 @@ def main():
     ap.add_argument("--checkpoint", required=True)
     ap.add_argument("--slices", default="M001,M002,M003")
     ap.add_argument("--suffix", default="egat")
-    ap.add_argument("--encoder", default="v1", choices=["v1", "v2", "v3"],
+    ap.add_argument("--encoder", default="v1", choices=["v1", "v2", "v3", "v4"],
                     help="v1=EGATEncoder, v2=EGATEncoderV2 (anti-collapse)")
     ap.add_argument("--batch", type=int, default=8192)
     args = ap.parse_args()
@@ -118,7 +118,7 @@ def main():
     ckpt_args = ckpt["args"]
     print(f"  trained at epoch {ckpt['epoch']}, val_metrics: {list(ckpt.get('val_metrics', {}).keys())}", flush=True)
 
-    EncoderClass = {"v1": EGATEncoder, "v2": EGATEncoderV2, "v3": EGATEncoderV3}[args.encoder]
+    EncoderClass = {"v1": EGATEncoder, "v2": EGATEncoderV2, "v3": EGATEncoderV3, "v4": EGATEncoderV4}[args.encoder]
     common_kwargs = dict(
         in_dim=ckpt_args.get("in_dim", 43),
         hidden_dim=ckpt_args["hidden"],
@@ -128,7 +128,7 @@ def main():
         dropout=ckpt_args.get("dropout", 0.1),
         attn_dropout=ckpt_args.get("attn_dropout", 0.0),
     )
-    if args.encoder == "v3":
+    if args.encoder in ("v3", "v4"):
         model = EncoderClass(
             n_niches=12,
             contrastive_weight=ckpt_args.get("contrastive_weight", 0.5),
