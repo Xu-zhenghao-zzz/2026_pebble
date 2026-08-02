@@ -1,0 +1,121 @@
+{
+  "n_samples": 0,
+  "correlations": {
+    "UTRN_vs_CD8A": {
+      "group": "CD8",
+      "rho": NaN,
+      "p": NaN,
+      "n": 0
+    },
+    "UTRN_vs_CD8B": {
+      "group": "CD8",
+      "rho": NaN,
+      "p": NaN,
+      "n": 0
+    },
+    "UTRN_vs_GZMB": {
+      "group": "CD8",
+      "rho": NaN,
+      "p": NaN,
+      "n": 0
+    },
+    "UTRN_vs_COL1A1": {
+      "group": "fibroblast",
+      "rho": NaN,
+      "p": NaN,
+      "n": 0
+    },
+    "UTRN_vs_PDGFRA": {
+      "group": "fibroblast",
+      "rho": NaN,
+      "p": NaN,
+      "n": 0
+    },
+    "UTRN_vs_DCN": {
+      "group": "fibroblast",
+      "rho": NaN,
+      "p": NaN,
+      "n": 0
+    },
+    "UTRN_vs_EPCAM": {
+      "group": "malignant",
+      "rho": NaN,
+      "p": NaN,
+      "n": 0
+    },
+    "UTRN_vs_KRT8": {
+      "group": "malignant",
+      "rho": NaN,
+      "p": NaN,
+      "n": 0
+    },
+    "UTRN_vs_CD68": {
+      "group": "macrophage",
+      "rho": NaN,
+      "p": NaN,
+      "n": 0
+    },
+    "UTRN_vs_STAT1": {
+      "group": "IFN-response",
+      "rho": NaN,
+      "p": NaN,
+      "n": 0
+    },
+    "UTRN_vs_IRF1": {
+      "group": "IFN-response",
+      "rho": NaN,
+      "p": NaN,
+      "n": 0
+    },
+    "UTRN_vs_ISG15": {
+      "group": "IFN-response",
+      "rho": NaN,
+      "p": NaN,
+      "n": 0
+    },
+    "UTRN_vs_HIF1A": {
+      "group": "hypoxia",
+      "rho": NaN,
+      "p": NaN,
+      "n": 0
+    },
+    "UTRN_vs_VEGFA": {
+      "group": "hypoxia",
+      "rho": NaN,
+      "p": NaN,
+      "n": 0
+    }
+  },
+  "high_vs_low": {
+    "CD8A": {
+      "high_mean": NaN,
+      "low_mean": NaN,
+      "u_stat": NaN,
+      "p": NaN
+    },
+    "IRF1": {
+      "high_mean": NaN,
+      "low_mean": NaN,
+      "u_stat": NaN,
+      "p": NaN
+    },
+    "DCN": {
+      "high_mean": NaN,
+      "low_mean": NaN,
+      "u_stat": NaN,
+      "p": NaN
+    },
+    "HIF1A": {
+      "high_mean": NaN,
+      "low_mean": NaN,
+      "u_stat": NaN,
+      "p": NaN
+    },
+    "VEGFA": {
+      "high_mean": NaN,
+      "low_mean": NaN,
+      "u_stat": NaN,
+      "p": NaN
+    }
+  }
+}

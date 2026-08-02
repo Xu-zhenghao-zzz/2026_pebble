@@ -1,0 +1,8 @@
+gene,response,n_slices,n_cohorts,combined_p,direction_consistent,mean_delta,min_p,slices,cohorts,combined_q
+Phgr1,score_fibroblast,7,2,3.6703301640824904e-61,True,0.4282304445141875,4.767657106022915e-64,"M001,M002,subQ-1,subQ-2,subQ-3,subQ-4,subQ-5","cohort1,cohort2",2.997436300667367e-60
+Rab8a,score_malignant,6,2,8.152079138553052e-57,True,0.49279539529994687,2.648011374791548e-89,"M001,subQ-1,subQ-2,subQ-3,subQ-4,subQ-5","cohort1,cohort2",4.993148472363744e-56
+Phgr1,score_macrophage,7,2,2.269085049847237e-42,True,0.41009232775414983,2.0406265419059303e-52,"M001,M002,subQ-1,subQ-2,subQ-3,subQ-4,subQ-5","cohort1,cohort2",1.1118516744251461e-41
+Phgr1,score_hypoxia,7,2,2.1295846691892324e-21,True,0.4369995063212161,2.187260120355918e-19,"M001,M002,subQ-1,subQ-2,subQ-3,subQ-4,subQ-5","cohort1,cohort2",6.138214634721905e-21
+Phgr1,score_endothelial,7,2,7.878060796865668e-20,True,-0.24458167578586845,7.83328787882151e-20,"M001,M002,subQ-1,subQ-2,subQ-3,subQ-4,subQ-5","cohort1,cohort2",2.0317104160337774e-19
+Bcam,score_malignant,6,2,2.3456277186559367e-11,True,0.4665612229847233,5.201292035661866e-06,"M001,subQ-1,subQ-2,subQ-3,subQ-4,subQ-5","cohort1,cohort2",4.420606085159265e-11
+Blnk,score_fibroblast,6,2,5.514362538503015e-06,True,0.29145143611510554,1.4352566704288977e-06,"M001,subQ-1,subQ-2,subQ-3,subQ-4,subQ-5","cohort1,cohort2",7.505660121851326e-06

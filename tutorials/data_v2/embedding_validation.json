@@ -1,0 +1,35 @@
+{
+  "checkpoint": "processed/bt_encoder_v3.pt",
+  "slices": {
+    "M001": {
+      "n_spots": 273886,
+      "n_source": 81921,
+      "n_ntc": 548,
+      "silhouette_celltype": 0.036836158484220505,
+      "niche_ari": 0.042268299114559614,
+      "niche_nmi": 0.0929801470426404,
+      "src_ntc_centroid_cos": 0.999671995639801,
+      "ntc_ifn_delta_40um": null
+    },
+    "M002": {
+      "n_spots": 358149,
+      "n_source": 61442,
+      "n_ntc": 191,
+      "silhouette_celltype": 0.15635575354099274,
+      "niche_ari": 0.0765313226638205,
+      "niche_nmi": 0.13376180344448552,
+      "src_ntc_centroid_cos": 0.9993905425071716,
+      "ntc_ifn_delta_40um": null
+    },
+    "M003": {
+      "n_spots": 488373,
+      "n_source": 106226,
+      "n_ntc": 1813,
+      "silhouette_celltype": 0.0616493858397007,
+      "niche_ari": 0.05320277113720158,
+      "niche_nmi": 0.1085940117590478,
+      "src_ntc_centroid_cos": 0.9999567866325378,
+      "ntc_ifn_delta_40um": null
+    }
+  }
+}

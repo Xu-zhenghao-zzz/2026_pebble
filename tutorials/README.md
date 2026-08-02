@@ -14,12 +14,24 @@ studies:
 4. [`03_real_spatiotemporal_gata3.ipynb`](03_real_spatiotemporal_gata3.ipynb)
    — raw Day-7 RNA/guide H5 and cell-type JSON to T/NK source patches, native-unit
    distance rings and an NTC-referenced Gata3 candidate signal.
+5. [`04_perturbgnn_v2_phgr1_cross_cohort.ipynb`](04_perturbgnn_v2_phgr1_cross_cohort.ipynb)
+   — v2 causal-identification module: Phgr1 cross-cohort replication across
+   7 slices and 5 module-score responses, TCGA LUAD survival, and the v1-vs-v2
+   honest-negative comparison. Reads only frozen small tables in
+   [`data_v2/`](data_v2/); no multi-GB inputs required.
 
-All notebooks are committed with tables and figures embedded. The three real
-notebooks start from the downloaded source matrices and annotations and do not
-read [`data/`](data/), which is retained only as a compact audit snapshot of the
-earlier result-level tutorials. Raw files are never modified and guide-negative
-bins are never automatically treated as unperturbed controls.
+Tutorials 1–4 use the `perturbradius` ring-decay package. Tutorial 5 uses the
+separate `perturbgnn_v2` module documented in
+[`../perturbgnn_v2_README.md`](../perturbgnn_v2_README.md). The two modules
+share no API; tutorial 5 is fully self-contained on the frozen tables.
+
+All notebooks are committed with tables and figures embedded. Tutorials 2–4
+start from the downloaded source matrices and annotations and do not read
+[`data/`](data/), which is retained only as a compact audit snapshot of the
+earlier result-level tutorials. Tutorial 5 reads only [`data_v2/`](data_v2/),
+which versions the small result tables of the v2 analysis. Raw files are never
+modified and guide-negative bins are never automatically treated as
+unperturbed controls.
 
 Set the data root before execution if the files are stored elsewhere:
 

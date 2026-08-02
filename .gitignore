@@ -18,3 +18,19 @@ results/
 !tutorials/data/
 !tutorials/data/*.tsv
 !tutorials/data/README.md
+!tutorials/data_v2/
+!tutorials/data_v2/*.csv
+!tutorials/data_v2/*.json
+!tutorials/data_v2/README.md
+
+# LaTeX / build intermediates (figures)
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk

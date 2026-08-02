@@ -1,0 +1,104 @@
+{
+  "results": [
+    {
+      "cohort": "mel_ucla_2016",
+      "label": "Melanoma anti-PD-1 (UCLA, Cell 2016)",
+      "response_col": "DURABLE_CLINICAL_BENEFIT",
+      "comparison": "PR vs PD",
+      "n_responder": 10,
+      "n_nonresponder": 13,
+      "phgr1_R": 76.7,
+      "phgr1_NR": 134.07692307692307,
+      "p": 0.898198991074818
+    },
+    {
+      "cohort": "mel_iatlas_riaz_nivolumab_2017",
+      "label": "Melanoma anti-PD-1 (Riaz, Cell 2017)",
+      "response_col": "CLINICAL_BENEFIT",
+      "comparison": "TRUE vs FALSE",
+      "n_responder": 30,
+      "n_nonresponder": 26,
+      "phgr1_R": 6.01119,
+      "phgr1_NR": 5.886761538461538,
+      "p": 0.45747889617027593
+    },
+    {
+      "cohort": "mel_iatlas_riaz_nivolumab_2017",
+      "label": "Melanoma anti-PD-1 (Riaz, Cell 2017)",
+      "response_col": "RESPONDER",
+      "comparison": "TRUE vs FALSE",
+      "n_responder": 11,
+      "n_nonresponder": 45,
+      "phgr1_R": 5.969690909090909,
+      "phgr1_NR": 5.949442222222222,
+      "p": 0.3176331424725669
+    },
+    {
+      "cohort": "mel_iatlas_hugo_ucla_2016",
+      "label": "Melanoma anti-PD-1 (Hugo, iAtlas)",
+      "response_col": "CLINICAL_BENEFIT",
+      "comparison": "TRUE vs FALSE",
+      "n_responder": 14,
+      "n_nonresponder": 13,
+      "phgr1_R": 5.572735714285714,
+      "phgr1_NR": 5.95516923076923,
+      "p": 0.8279920287098543
+    },
+    {
+      "cohort": "mel_iatlas_hugo_ucla_2016",
+      "label": "Melanoma anti-PD-1 (Hugo, iAtlas)",
+      "response_col": "RESPONDER",
+      "comparison": "TRUE vs FALSE",
+      "n_responder": 14,
+      "n_nonresponder": 13,
+      "phgr1_R": 5.572735714285714,
+      "phgr1_NR": 5.95516923076923,
+      "p": 0.8279920287098543
+    },
+    {
+      "cohort": "mel_iatlas_liu_2019",
+      "label": "Melanoma anti-PD-1/CTLA-4 (Liu, iAtlas)",
+      "response_col": "CLINICAL_BENEFIT",
+      "comparison": "TRUE vs FALSE",
+      "n_responder": 66,
+      "n_nonresponder": 56,
+      "phgr1_R": 6.461190909090909,
+      "phgr1_NR": 6.325667857142856,
+      "p": 0.30280153727673587
+    },
+    {
+      "cohort": "mel_iatlas_liu_2019",
+      "label": "Melanoma anti-PD-1/CTLA-4 (Liu, iAtlas)",
+      "response_col": "RESPONDER",
+      "comparison": "TRUE vs FALSE",
+      "n_responder": 48,
+      "n_nonresponder": 74,
+      "phgr1_R": 6.319333333333334,
+      "phgr1_NR": 6.450648648648648,
+      "p": 0.35783529565813044
+    },
+    {
+      "cohort": "mel_iatlas_gide_2019",
+      "label": "Melanoma ICB (Gide, Cancer Cell 2019)",
+      "response_col": "CLINICAL_BENEFIT",
+      "comparison": "TRUE vs FALSE",
+      "n_responder": 51,
+      "n_nonresponder": 24,
+      "phgr1_R": 7.022635294117647,
+      "phgr1_NR": 6.952891666666666,
+      "p": 0.18630769474891729
+    },
+    {
+      "cohort": "mel_iatlas_gide_2019",
+      "label": "Melanoma ICB (Gide, Cancer Cell 2019)",
+      "response_col": "RESPONDER",
+      "comparison": "TRUE vs FALSE",
+      "n_responder": 40,
+      "n_nonresponder": 35,
+      "phgr1_R": 7.094300000000001,
+      "phgr1_NR": 6.892908571428571,
+      "p": 0.10998710436237841
+    }
+  ],
+  "elapsed": 20.814367294311523
+}
